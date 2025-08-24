@@ -1,4 +1,3 @@
-\
 import React, { useEffect, useMemo, useState } from 'react'
 
 const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:8080'
@@ -42,14 +41,8 @@ export default function App() {
     const r = await fetch(`${apiBase}/api/claim`, {
       method: 'POST', headers: authHeaders, body: JSON.stringify({ slotIndex })
     }).then(r=>r.json())
-    if (r.ok) {
-      setMessage(`Gavai +${r.gained} XP`)
-      tg?.HapticFeedback?.notificationOccurred('success')
-      loadAll()
-    } else {
-      setMessage(r.error || 'Nepavyko')
-      tg?.HapticFeedback?.notificationOccurred('error')
-    }
+    if (r.ok) { setMessage(`Gavai +${r.gained} XP`); tg?.HapticFeedback?.notificationOccurred('success'); loadAll() }
+    else { setMessage(r.error || 'Nepavyko'); tg?.HapticFeedback?.notificationOccurred('error') }
   }
 
   const stake = async (slotIndex, cardId) => {
@@ -57,7 +50,7 @@ export default function App() {
     const r = await fetch(`${apiBase}/api/stake`, {
       method: 'POST', headers: authHeaders, body: JSON.stringify({ slotIndex, cardId })
     }).then(r=>r.json())
-    if (r.ok) { loadAll() } else { setMessage(r.error || 'Nepavyko') }
+    if (r.ok) loadAll(); else setMessage(r.error || 'Nepavyko')
   }
 
   if (loading) return <Center>Įkeliama…</Center>
@@ -124,13 +117,13 @@ export default function App() {
   )
 }
 
-function Progress({value}){
+function Progress({value}) {
   return (
     <div style={{height:8, background:'#334155', borderRadius:999, overflow:'hidden', marginTop:6, marginBottom:6}}>
       <div style={{height:'100%', width:`${value}%`, background:value>50?'#22c55e':value>25?'#f59e0b':'#ef4444'}}></div>
     </div>
   )
 }
-function Center({children}){
+function Center({children}) {
   return <div style={{display:'grid', placeItems:'center', height:'100vh'}}>{children}</div>
 }
