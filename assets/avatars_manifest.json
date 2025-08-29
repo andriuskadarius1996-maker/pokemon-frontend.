@@ -1,0 +1,424 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv01.png",
+      "stake_path": "stake_monsters/lv01.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.25
+      }
+    },
+    {
+      "level": 2,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv02.png",
+      "stake_path": "stake_monsters/lv02.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.28
+      }
+    },
+    {
+      "level": 3,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv03.png",
+      "stake_path": "stake_monsters/lv03.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.3
+      }
+    },
+    {
+      "level": 4,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv04.png",
+      "stake_path": "stake_monsters/lv04.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.33
+      }
+    },
+    {
+      "level": 5,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv05.png",
+      "stake_path": "stake_monsters/lv05.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.35
+      }
+    },
+    {
+      "level": 6,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv06.png",
+      "stake_path": "stake_monsters/lv06.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.38
+      }
+    },
+    {
+      "level": 7,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv07.png",
+      "stake_path": "stake_monsters/lv07.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.41
+      }
+    },
+    {
+      "level": 8,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv08.png",
+      "stake_path": "stake_monsters/lv08.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.43
+      }
+    },
+    {
+      "level": 9,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv09.png",
+      "stake_path": "stake_monsters/lv09.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.46
+      }
+    },
+    {
+      "level": 10,
+      "phase": "spark",
+      "avatar_path": "avatars_main/lv10.png",
+      "stake_path": "stake_monsters/lv10.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.48
+      }
+    },
+    {
+      "level": 11,
+      "phase": "ember",
+      "avatar_path": "avatars_main/lv11.png",
+      "stake_path": "stake_monsters/lv11.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": true,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.51
+      }
+    },
+    {
+      "level": 12,
+      "phase": "ember",
+      "avatar_path": "avatars_main/lv12.png",
+      "stake_path": "stake_monsters/lv12.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": true,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.53
+      }
+    },
+    {
+      "level": 13,
+      "phase": "ember",
+      "avatar_path": "avatars_main/lv13.png",
+      "stake_path": "stake_monsters/lv13.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": true,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.56
+      }
+    },
+    {
+      "level": 14,
+      "phase": "ember",
+      "avatar_path": "avatars_main/lv14.png",
+      "stake_path": "stake_monsters/lv14.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": true,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.59
+      }
+    },
+    {
+      "level": 15,
+      "phase": "ember",
+      "avatar_path": "avatars_main/lv15.png",
+      "stake_path": "stake_monsters/lv15.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": true,
+        "waves": false,
+        "starburst": false,
+        "intensity": 0.61
+      }
+    },
+    {
+      "level": 16,
+      "phase": "aquado",
+      "avatar_path": "avatars_main/lv16.png",
+      "stake_path": "stake_monsters/lv16.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": true,
+        "starburst": false,
+        "intensity": 0.64
+      }
+    },
+    {
+      "level": 17,
+      "phase": "aquado",
+      "avatar_path": "avatars_main/lv17.png",
+      "stake_path": "stake_monsters/lv17.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": true,
+        "starburst": false,
+        "intensity": 0.66
+      }
+    },
+    {
+      "level": 18,
+      "phase": "aquado",
+      "avatar_path": "avatars_main/lv18.png",
+      "stake_path": "stake_monsters/lv18.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": true,
+        "starburst": false,
+        "intensity": 0.69
+      }
+    },
+    {
+      "level": 19,
+      "phase": "aquado",
+      "avatar_path": "avatars_main/lv19.png",
+      "stake_path": "stake_monsters/lv19.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": true,
+        "starburst": false,
+        "intensity": 0.72
+      }
+    },
+    {
+      "level": 20,
+      "phase": "aquado",
+      "avatar_path": "avatars_main/lv20.png",
+      "stake_path": "stake_monsters/lv20.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": true,
+        "starburst": false,
+        "intensity": 0.74
+      }
+    },
+    {
+      "level": 21,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv21.png",
+      "stake_path": "stake_monsters/lv21.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.77
+      }
+    },
+    {
+      "level": 22,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv22.png",
+      "stake_path": "stake_monsters/lv22.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.79
+      }
+    },
+    {
+      "level": 23,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv23.png",
+      "stake_path": "stake_monsters/lv23.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.82
+      }
+    },
+    {
+      "level": 24,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv24.png",
+      "stake_path": "stake_monsters/lv24.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.84
+      }
+    },
+    {
+      "level": 25,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv25.png",
+      "stake_path": "stake_monsters/lv25.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.87
+      }
+    },
+    {
+      "level": 26,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv26.png",
+      "stake_path": "stake_monsters/lv26.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.9
+      }
+    },
+    {
+      "level": 27,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv27.png",
+      "stake_path": "stake_monsters/lv27.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.92
+      }
+    },
+    {
+      "level": 28,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv28.png",
+      "stake_path": "stake_monsters/lv28.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.95
+      }
+    },
+    {
+      "level": 29,
+      "phase": "legendary",
+      "avatar_path": "avatars_main/lv29.png",
+      "stake_path": "stake_monsters/lv29.png",
+      "effects": {
+        "aura": true,
+        "lightning": false,
+        "flames": false,
+        "waves": false,
+        "starburst": true,
+        "intensity": 0.97
+      }
+    },
+    {
+      "level": 30,
+      "phase": "pikachu",
+      "avatar_path": "avatars_main/lv30.png",
+      "stake_path": "stake_monsters/lv30.png",
+      "effects": {
+        "aura": true,
+        "lightning": true,
+        "flames": false,
+        "waves": false,
+        "starburst": false,
+        "intensity": 1.0
+      }
+    }
+  ]
+}
