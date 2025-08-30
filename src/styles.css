@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Subtilus idle glow + vortex pulsacija klasė */
-.vortex-glow {
-  position: relative;
-}
+.vortex-glow { position: relative; }
 .vortex-glow::after {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: 9999px;
+  content: ""; position: absolute; inset: -6px; border-radius: 9999px;
   box-shadow: 0 0 24px rgba(255, 215, 0, 0.6), 0 0 48px rgba(255, 215, 0, 0.35);
   animation: vortex 2.2s ease-in-out infinite;
 }
