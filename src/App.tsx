@@ -3,14 +3,16 @@ import manifest from './avatars_manifest.json'
 
 type Tab = 'Main' | 'Stake' | 'Shop' | 'Referral' | 'Leaderboard' | 'Season Info' | 'Daily Check'
 
-function fileHref(p?: string): string {
+const assetUrls = import.meta.glob('./assets/avatars_main/*', { eager: true, as: 'url' }) as Record<string, string>
+const byName: Record<string, string> = {}
+Object.entries(assetUrls).forEach(([path, url]) => {
+  const name = path.split('/').pop()!
+  byName[name] = url as string
+})
+function urlFromManifestPath(p?: string): string {
   if (!p) return ''
-  const rel = p.replace(/^src\//, './')
-  try {
-    return new URL(rel, import.meta.url).href
-  } catch {
-    return ''
-  }
+  const file = p.split('/').pop() || ''
+  return byName[file] || ''
 }
 
 export default function App() {
@@ -19,10 +21,9 @@ export default function App() {
 
   const pikachu: any = (manifest as any).levels.find((lvl: any) => (lvl as any).level === 30)
   const vortexSkin = pikachu?.skins?.find((s: any) => s.skin === 'vortex')
-
-  const vortexImg = vortexSkin?.files?.['1024_png']
-    ? fileHref(vortexSkin.files['1024_png'])
-    : fileHref(vortexSkin?.files?.['512_png'])
+  const vortexImg =
+    urlFromManifestPath(vortexSkin?.files?.['1024_png']) ||
+    urlFromManifestPath(vortexSkin?.files?.['512_png'])
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
@@ -30,6 +31,7 @@ export default function App() {
         <h1 className="text-xl font-bold">POKE TOKEN — Season 1</h1>
         <span className="text-xs rounded-full border border-yellow-400/60 px-2 py-1">Pikachu Vortex</span>
       </header>
+
       <nav className="px-4 py-3 flex gap-2 flex-wrap border-b border-neutral-900">
         {tabs.map(t => (
           <button
@@ -41,6 +43,7 @@ export default function App() {
           </button>
         ))}
       </nav>
+
       <main className="p-6">
         {tab === 'Main' ? (
           <section className="grid gap-6 md:grid-cols-2 items-center">
