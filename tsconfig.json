@@ -19,7 +19,6 @@
     "esModuleInterop": true
   },
   "include": [
-    "src",
-    "avatars_manifest.json"
+    "src"
   ]
 }

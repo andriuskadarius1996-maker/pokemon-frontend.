@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import manifest from '../avatars_manifest.json'
+import manifest from './avatars_manifest.json'
 
 type Tab = 'Main' | 'Stake' | 'Shop' | 'Referral' | 'Leaderboard' | 'Season Info' | 'Daily Check'
 
