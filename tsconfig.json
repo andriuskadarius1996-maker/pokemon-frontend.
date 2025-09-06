@@ -9,16 +9,14 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
-    "jsx": "react-jsx",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "allowJs": false,
+    "jsx": "react-jsx",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true
+    "noImplicitAny": false,
+    "esModuleInterop": true
   },
   "include": [
     "src"

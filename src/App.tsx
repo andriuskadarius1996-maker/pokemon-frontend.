@@ -1,10 +1,20 @@
 import React, { useState } from 'react'
-import vortexImg from './assets/avatars_main/pikachu_vortex_1024.png'
+import manifest from './avatars_manifest.json'
 
 type Tab = 'Main' | 'Stake' | 'Shop' | 'Referral' | 'Leaderboard' | 'Season Info' | 'Daily Check'
+
 export default function App() {
   const [tab, setTab] = useState<Tab>('Main')
   const tabs: Tab[] = ['Main','Stake','Shop','Referral','Leaderboard','Season Info','Daily Check']
+
+  const pikachu = manifest.levels.find((lvl: any) => lvl.level === 30)
+  const vortexSkin = pikachu?.skins?.find((s: any) => s.skin === 'vortex')
+
+  const vortexImg =
+    vortexSkin?.files?.['1024_png']
+      ? require(`${'./'}${vortexSkin.files['1024_png']}`)
+      : require(`${'./'}${vortexSkin?.files?.['512_png']}`)
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
       <header className="px-4 py-3 border-b border-neutral-800 flex items-center justify-between">
