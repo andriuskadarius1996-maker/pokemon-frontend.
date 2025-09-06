@@ -1,19 +1,30 @@
 import React, { useState } from 'react'
-import manifest from './avatars_manifest.json'
+import manifest from '../avatars_manifest.json'
 
 type Tab = 'Main' | 'Stake' | 'Shop' | 'Referral' | 'Leaderboard' | 'Season Info' | 'Daily Check'
+
+// helper: convert a manifest path like "src/assets/..." to a URL for <img src>
+function fileHref(p?: string): string {
+  if (!p) return ''
+  const rel = p.replace(/^src\//, './') // make it relative to current module
+  try {
+    return new URL(rel, import.meta.url).href
+  } catch {
+    return ''
+  }
+}
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('Main')
   const tabs: Tab[] = ['Main','Stake','Shop','Referral','Leaderboard','Season Info','Daily Check']
 
-  const pikachu = manifest.levels.find((lvl: any) => lvl.level === 30)
+  // pick Pikachu level 30, skin vortex
+  const pikachu: any = (manifest as any).levels.find((lvl: any) => lvl.level === 30)
   const vortexSkin = pikachu?.skins?.find((s: any) => s.skin === 'vortex')
 
-  const vortexImg =
-    vortexSkin?.files?.['1024_png']
-      ? require(`${'./'}${vortexSkin.files['1024_png']}`)
-      : require(`${'./'}${vortexSkin?.files?.['512_png']}`)
+  const vortexImg = vortexSkin?.files?.['1024_png']
+    ? fileHref(vortexSkin.files['1024_png'])
+    : fileHref(vortexSkin?.files?.['512_png'])
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
@@ -23,7 +34,7 @@ export default function App() {
       </header>
       <nav className="px-4 py-3 flex gap-2 flex-wrap border-b border-neutral-900">
         {tabs.map(t => (
-          <button key={t} onClick={() => setTab(t)} className={`px-3 py-1.5 rounded-full text-sm border ${tab===t ? 'border-yellow-400 text-yellow-200' : 'border-neutral-700 text-neutral-300 hover:border-neutral-500'}`}>
+          <button key={t} onClick={() => setTab(t)} className={\`px-3 py-1.5 rounded-full text-sm border \${tab===t ? 'border-yellow-400 text-yellow-200' : 'border-neutral-700 text-neutral-300 hover:border-neutral-500'}\`}>
             {t}
           </button>
         ))}
@@ -43,7 +54,11 @@ export default function App() {
             </div>
             <div className="flex justify-center">
               <div className="p-3 rounded-2xl bg-neutral-900 border border-yellow-400/20 vortex-glow">
-                <img src={vortexImg} alt="Pikachu Vortex" className="w-72 h-72 object-cover rounded-2xl" />
+                {vortexImg ? (
+                  <img src={vortexImg} alt="Pikachu Vortex" className="w-72 h-72 object-cover rounded-2xl" />
+                ) : (
+                  <div className="w-72 h-72 rounded-2xl grid place-items-center text-sm text-neutral-400">Image not found</div>
+                )}
               </div>
             </div>
           </section>
