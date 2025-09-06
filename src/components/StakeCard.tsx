@@ -1,13 +1,7 @@
-import { useState } from "react";
 import { actions, useSnapshot } from "../state/store";
-
 const baseRates: Record<string, number> = { Sparko:2, Embero:3, Aquado:4, Legendary:6, Pikachu:10 };
-
 export default function StakeCard({name}:{name:keyof typeof baseRates | string}){
-  const s = useSnapshot();
-  const lvl = s.inventory[name]?.level || 0;
-  const base = baseRates[name as string] || 0;
-  const rate = base + lvl;
+  const s = useSnapshot(); const lvl=s.inventory[name]?.level||0; const base=baseRates[name as string]||0; const rate=base+lvl;
   return (
     <div className="card">
       <div className="title">{name}</div>
