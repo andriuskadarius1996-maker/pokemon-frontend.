@@ -8,7 +8,10 @@ type Tab = 'Main'|'Stake'|'Shop'|'Referral'|'Leaderboard'|'Season Info'|'Daily C
 const tabs: Tab[] = ['Main','Stake','Shop','Referral','Leaderboard','Season Info','Daily Check']
 
 // Preload all avatar images with Vite's glob import
-const avatarImgs = import.meta.glob('./assets/avatars_main/*.png', { eager: true, as: 'url' }) as Record<string, string>;
+const avatarImgs = {
+  ...import.meta.glob('./assets/avatars_main/*.png', { eager: true, as: 'url' }),
+  ...import.meta.glob('./assets/avatars_main/*.{jpg,jpeg,JPG,JPEG}', { eager: true, as: 'url' }),
+} as Record<string, string>;
 
 const typeBadge = (t:string) => ({
   electric: '⚡',
@@ -38,8 +41,11 @@ export default function App(){
   const { state, commit } = useGame()
 
   const avatars: Avatar[] = useMemo(()=> manifest.levels.map((v) => {
-    const file = `./assets/avatars_main/lv${String(v.level).padStart(2,'0')}.png`
-    const img = avatarImgs[file] || Object.values(avatarImgs)[0]
+    const base = `./assets/avatars_main/lv${String(v.level).padStart(2,'0')}`
+    const png = `${base}.png`
+    const jpg = `${base}.jpg`
+    const jpeg = `${base}.jpeg`
+    const img = avatarImgs[png] || avatarImgs[jpg] || avatarImgs[jpeg] || Object.values(avatarImgs)[0]
     return { level: v.level, name: v.name, type: v.type, img }
   }), [])
 
