@@ -1,21 +1,9 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Avatars Test</title></head>
-<body style="background:#0b1220;color:#fff;font-family:sans-serif;margin:0;padding:24px">
-  <h1>Avatars Test</h1>
-  <div id="grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:16px"></div>
-  <script>
-    const base = '/';
-    const grid = document.getElementById('grid');
-    for (let i=1;i<=30;i++){
-      const n = String(i).padStart(2,'0');
-      const src = base + 'avatars_main/lv'+n+'.png';
-      const card = document.createElement('div');
-      card.style.cssText='background:#0f1a33;padding:12px;border-radius:12px;text-align:center';
-      const img = document.createElement('img');
-      img.src = src; img.alt = 'lv'+n; img.style.cssText='width:100%;height:auto;border-radius:10px';
-      img.onerror = () => { img.style.opacity='.25'; img.title='Nerastas: '+src; };
-      const cap = document.createElement('small'); cap.textContent='lv'+n+'.png'; cap.style.opacity='.8';
-      card.appendChild(img); card.appendChild(cap); grid.appendChild(card);
-    }
-  </script>
-</body></html>
+<html>
+  <head><meta charset="utf-8"><title>Avatars Test</title></head>
+  <body style="background:#0b1220;color:#fff;font-family:sans-serif;margin:0;padding:32px">
+    <h1>Avatars Test</h1>
+    <p>Jei matai paveikslėlį žemiau, public/avatars_main yra OK.</p>
+    <img src="/avatars_main/lv01.png" alt="lv01" style="width:160px;height:auto;border-radius:12px;box-shadow:0 0 20px rgba(255,255,255,.2)" />
+  </body>
+</html>
