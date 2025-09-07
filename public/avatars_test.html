@@ -1,21 +1,13 @@
-<!doctype html><meta charset="utf-8"><title>Sparko Lv01 Test</title>
+<!doctype html><meta charset="utf-8"><title>Sparko Lv01 Clean</title>
 <style>
 body{background:#0b1222;color:#fff;font-family:system-ui;padding:24px}
 .card{width:360px;background:#0f1a33;border-radius:16px;padding:12px;position:relative;overflow:hidden}
 .card img{width:100%;border-radius:12px;display:block;position:relative;z-index:2;animation:floaty 6s ease-in-out infinite}
-.fx, .fx2{position:absolute;inset:0;z-index:1;pointer-events:none}
-.fx{filter:blur(24px);animation:pulse 4s ease-in-out infinite;
-    background:radial-gradient(160px 140px at 58% 48%, rgba(255,236,97,.55), transparent 60%),
-               radial-gradient(240px 160px at 40% 64%, rgba(90,160,255,.35), transparent 70%);}
-.fx2{background-image:repeating-linear-gradient(115deg, rgba(255,255,255,.15) 0 2px, transparent 2px 12px);
-     mix-blend-mode:screen; animation:flicker 2.6s infinite; opacity:.65}
+.fx{position:absolute;inset:0;z-index:1;pointer-events:none;filter:blur(24px);animation:pulse 4s ease-in-out infinite;
+background:radial-gradient(160px 140px at 58% 48%, rgba(255,236,97,.55), transparent 60%),
+radial-gradient(240px 160px at 40% 64%, rgba(90,160,255,.35), transparent 70%);}
 @keyframes pulse{0%{transform:scale(1);opacity:.8}50%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:.8}}
 @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-4px)}100%{transform:translateY(0)}}
-@keyframes flicker{0%,19%,21%,53%,57%,100%{opacity:.7}20%,54%{opacity:.4}55%{opacity:.25}}
 </style>
-<h1>Sparko Lv01 (animated effects demo)</h1>
-<div class="card">
-  <div class="fx"></div>
-  <div class="fx2"></div>
-  <img src="/avatars_main/lv01.png" alt="lv01"/>
-</div>
+<h1>Sparko Lv01 (clean, no diagonal stripes)</h1>
+<div class="card"><div class="fx"></div><img src="/avatars_main/lv01.png" alt="lv01"></div>
