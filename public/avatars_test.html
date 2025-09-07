@@ -1,5 +1,5 @@
-<!doctype html><meta charset="utf-8"><title>Avatars v2 Test</title>
+<!doctype html><meta charset="utf-8"><title>Avatars v3 Test</title>
 <style>body{background:#0b1222;color:#fff;font-family:system-ui;padding:24px} .g{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
 .c{background:#0f1a33;border-radius:16px;padding:12px} img{width:100%;border-radius:12px}</style>
-<h1>Avatars v2 (transparent, effects)</h1><div class="g" id="g"></div>
+<h1>Avatars v3 — Original Characters</h1><div class="g" id="g"></div>
 <script>fetch('/avatars_manifest.json').then(r=>r.json()).then(m=>{const g=document.getElementById('g');Object.keys(m).forEach(k=>{const d=document.createElement('div');d.className='c';const i=new Image();i.src=m[k];i.alt='lv'+k;d.appendChild(i);g.appendChild(d);});});</script>
