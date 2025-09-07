@@ -1,3 +1,4 @@
+
 import React, { useMemo, useState } from 'react'
 import manifest from './assets/avatars_manifest.json'
 import { Avatar, loadState, saveState, addXP, addPT, grantXPBoost, grantStakeBoost, State } from './utils'
@@ -5,6 +6,9 @@ import { Avatar, loadState, saveState, addXP, addPT, grantXPBoost, grantStakeBoo
 type Tab = 'Main'|'Stake'|'Shop'|'Referral'|'Leaderboard'|'Season Info'|'Daily Check'
 
 const tabs: Tab[] = ['Main','Stake','Shop','Referral','Leaderboard','Season Info','Daily Check']
+
+// Preload all avatar images with Vite's glob import
+const avatarImgs = import.meta.glob('./assets/avatars_main/*.png', { eager: true, as: 'url' }) as Record<string, string>;
 
 const typeBadge = (t:string) => ({
   electric: '⚡',
@@ -33,12 +37,11 @@ export default function App(){
   const [tab, setTab] = useState<Tab>('Main')
   const { state, commit } = useGame()
 
-  const avatars: Avatar[] = useMemo(()=> manifest.levels.map((v) => ({
-    level: v.level,
-    name: v.name,
-    type: v.type,
-    img: `/src/assets/avatars_main/lv${String(v.level).padStart(2,'0')}.png`
-  })), [])
+  const avatars: Avatar[] = useMemo(()=> manifest.levels.map((v) => {
+    const file = `./assets/avatars_main/lv${String(v.level).padStart(2,'0')}.png`
+    const img = avatarImgs[file] || Object.values(avatarImgs)[0]
+    return { level: v.level, name: v.name, type: v.type, img }
+  }), [])
 
   const currentAvatar = avatars[Math.min(state.player.level-1, avatars.length-1)]
 
