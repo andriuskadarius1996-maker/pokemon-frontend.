@@ -5,7 +5,7 @@ import AvatarAnimated from "./components/AvatarAnimated";
 import StakeCard from "./components/StakeCard";
 
 type Tab = "Main" | "Stake" | "Shop" | "Referral" | "Leaderboard" | "Season" | "Daily";
-const avatarPaths = Array.from({length:30}, (_,i)=> `./assets/avatars_main/lv${String(i+1).padStart(2,"0")}.png`);
+const avatarPaths = Array.from({length:30}, (_,i)=> `./avatars_main/lv${String(i+1).padStart(2,"0")}.png`);
 const avatars = avatarPaths.map(p => new URL(p, import.meta.url).href);
 
 function Tabs({tab, setTab}:{tab:Tab; setTab:(t:Tab)=>void}){
