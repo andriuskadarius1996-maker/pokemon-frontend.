@@ -1,11 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-:root { color-scheme: dark; }
-.card { @apply rounded-2xl shadow-lg p-6 bg-neutral-900/60 border border-white/5; }
-.title { @apply text-2xl font-bold; }
-.badge { @apply text-xs px-2 py-1 rounded-full bg-white/10 border border-white/10; }
-.tab { @apply px-3 py-2 rounded-xl bg-neutral-800/60 border border-white/10 cursor-pointer select-none; }
-.tab-active { @apply bg-white text-black font-semibold; }
-@keyframes glow { 0% { filter: drop-shadow(0 0 2px rgba(255,255,255,.35)); } 50% { filter: drop-shadow(0 0 10px rgba(255,255,255,.65)); } 100% { filter: drop-shadow(0 0 2px rgba(255,255,255,.35)); } }
-.glow { animation: glow 2s ease-in-out infinite; }
+
+:root{
+  --bg:#0b1222; --card:#0f1a33; --txt:#e8f0ff;
+}
+*{box-sizing:border-box}
+body, #root, .page{min-height:100vh}
+.page{background:var(--bg); color:var(--txt); font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif; padding:24px}
+h1{font-size:22px;margin:0 0 8px 0}
+h2{font-size:18px;margin:0 0 16px 0; opacity:.9}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px}
+.card{position:relative; background:var(--card); border-radius:20px; padding:12px; overflow:hidden;
+      box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.card img{width:100%; height:auto; display:block; border-radius:14px; position:relative; z-index:2}
+.label{position:absolute; right:10px; top:10px; background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.25);
+       color:#fff; font-size:12px; padding:4px 8px; border-radius:999px; z-index:3}
+
+@keyframes pulseGlow { 0%{transform:scale(1); opacity:.8} 50%{transform:scale(1.06); opacity:1} 100%{transform:scale(1); opacity:.8} }
+@keyframes floaty { 0%{transform:translateY(0)} 50%{transform:translateY(-6px)} 100%{transform:translateY(0)} }
+@keyframes sparkle { 0%{opacity:.2} 50%{opacity:.6} 100%{opacity:.2} }
+
+.glow{position:absolute; inset:0; z-index:1; filter:blur(28px); transform-origin:center; animation:pulseGlow 3.8s ease-in-out infinite}
+.card .aura::before, .card .aura::after{content:""; position:absolute; inset:12px; border-radius:16px; pointer-events:none}
+.card .aura::after{animation:floaty 4.8s ease-in-out infinite}
+
+.card.sparko .glow{background:radial-gradient(120px 120px at 60% 46%, rgba(255,236,97,.65), transparent 60%), 
+                               radial-gradient(220px 160px at 40% 60%, rgba(90,160,255,.45), transparent 70%)}
+.card.embero .glow{background:radial-gradient(140px 120px at 58% 48%, rgba(255,130,40,.6), transparent 60%), 
+                               radial-gradient(220px 160px at 40% 64%, rgba(255,60,48,.4), transparent 70%)}
+.card.aquado .glow{background:radial-gradient(140px 140px at 58% 48%, rgba(74,221,255,.55), transparent 60%), 
+                               radial-gradient(220px 160px at 40% 64%, rgba(0,120,200,.35), transparent 70%)}
+.card.legendary .glow{background:radial-gradient(160px 160px at 56% 50%, rgba(243,199,255,.55), transparent 60%),
+                                   radial-gradient(220px 160px at 44% 62%, rgba(255,185,64,.35), transparent 70%)}
+.card.pikachu .glow{background:radial-gradient(180px 160px at 56% 50%, rgba(255,242,84,.65), transparent 60%),
+                                 radial-gradient(260px 200px at 44% 62%, rgba(255,255,255,.35), transparent 70%)}
+
+.card img{animation:floaty 6s ease-in-out infinite}
+
