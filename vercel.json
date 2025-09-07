@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/((?!avatars_main|assets|favicon\\.ico|favicon\\.png|.*\\.(css|js|png|jpg|jpeg|svg|json|webp|gif)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
