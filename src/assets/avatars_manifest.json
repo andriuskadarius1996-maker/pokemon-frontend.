@@ -2,153 +2,128 @@
   "levels": [
     {
       "level": 1,
-      "name": "Sparko-1",
-      "type": "electric"
+      "name": "Avatar-1",
+      "type": "placeholder"
     },
     {
       "level": 2,
-      "name": "Sparko-2",
-      "type": "electric"
+      "name": "Avatar-2",
+      "type": "placeholder"
     },
     {
       "level": 3,
-      "name": "Sparko-3",
-      "type": "electric"
+      "name": "Avatar-3",
+      "type": "placeholder"
     },
     {
       "level": 4,
-      "name": "Sparko-4",
-      "type": "electric"
+      "name": "Avatar-4",
+      "type": "placeholder"
     },
     {
       "level": 5,
-      "name": "Sparko-5",
-      "type": "electric"
+      "name": "Avatar-5",
+      "type": "placeholder"
     },
     {
       "level": 6,
-      "name": "Sparko-6",
-      "type": "electric"
+      "name": "Avatar-6",
+      "type": "placeholder"
     },
     {
       "level": 7,
-      "name": "Sparko-7",
-      "type": "electric"
+      "name": "Avatar-7",
+      "type": "placeholder"
     },
     {
       "level": 8,
-      "name": "Sparko-8",
-      "type": "electric"
+      "name": "Avatar-8",
+      "type": "placeholder"
     },
     {
       "level": 9,
-      "name": "Sparko-9",
-      "type": "electric"
+      "name": "Avatar-9",
+      "type": "placeholder"
     },
     {
       "level": 10,
-      "name": "Sparko-10",
-      "type": "electric"
+      "name": "Avatar-10",
+      "type": "placeholder"
     },
     {
       "level": 11,
-      "name": "Embero-11",
-      "type": "fire"
+      "name": "Avatar-11",
+      "type": "placeholder"
     },
     {
       "level": 12,
-      "name": "Embero-12",
-      "type": "fire"
+      "name": "Avatar-12",
+      "type": "placeholder"
     },
     {
       "level": 13,
-      "name": "Embero-13",
-      "type": "fire"
+      "name": "Avatar-13",
+      "type": "placeholder"
     },
     {
       "level": 14,
-      "name": "Embero-14",
-      "type": "fire"
+      "name": "Avatar-14",
+      "type": "placeholder"
     },
     {
       "level": 15,
-      "name": "Embero-15",
-      "type": "fire"
+      "name": "Avatar-15",
+      "type": "placeholder"
     },
     {
       "level": 16,
-      "name": "Aquado-16",
-      "type": "water"
+      "name": "Avatar-16",
+      "type": "placeholder"
     },
     {
       "level": 17,
-      "name": "Aquado-17",
-      "type": "water"
+      "name": "Avatar-17",
+      "type": "placeholder"
     },
     {
       "level": 18,
-      "name": "Aquado-18",
-      "type": "water"
+      "name": "Avatar-18",
+      "type": "placeholder"
     },
     {
       "level": 19,
-      "name": "Aquado-19",
-      "type": "water"
+      "name": "Avatar-19",
+      "type": "placeholder"
     },
     {
       "level": 20,
-      "name": "Aquado-20",
-      "type": "water"
+      "name": "Avatar-20",
+      "type": "placeholder"
     },
     {
       "level": 21,
-      "name": "Legendary-21",
-      "type": "legend"
+      "name": "Avatar-21",
+      "type": "placeholder"
     },
     {
       "level": 22,
-      "name": "Legendary-22",
-      "type": "legend"
+      "name": "Avatar-22",
+      "type": "placeholder"
     },
     {
       "level": 23,
-      "name": "Legendary-23",
-      "type": "legend"
+      "name": "Avatar-23",
+      "type": "placeholder"
     },
     {
       "level": 24,
-      "name": "Legendary-24",
-      "type": "legend"
+      "name": "Avatar-24",
+      "type": "placeholder"
     },
     {
       "level": 25,
-      "name": "Legendary-25",
-      "type": "legend"
-    },
-    {
-      "level": 26,
-      "name": "Legendary-26",
-      "type": "legend"
-    },
-    {
-      "level": 27,
-      "name": "Legendary-27",
-      "type": "legend"
-    },
-    {
-      "level": 28,
-      "name": "Legendary-28",
-      "type": "legend"
-    },
-    {
-      "level": 29,
-      "name": "Legendary-29",
-      "type": "legend"
-    },
-    {
-      "level": 30,
-      "name": "Pikachu-30",
-      "type": "electric-legend"
+      "name": "Avatar-25",
+      "type": "placeholder"
     }
   ]
 }
