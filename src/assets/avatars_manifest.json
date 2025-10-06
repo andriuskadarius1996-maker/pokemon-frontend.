@@ -2,153 +2,153 @@
   "levels": [
     {
       "level": 1,
-      "name": "Sparko-1",
-      "type": "electric"
+      "name": "Rock-1",
+      "type": "earth"
     },
     {
       "level": 2,
-      "name": "Sparko-2",
-      "type": "electric"
+      "name": "Rock-2",
+      "type": "earth"
     },
     {
       "level": 3,
-      "name": "Sparko-3",
-      "type": "electric"
+      "name": "Rock-3",
+      "type": "earth"
     },
     {
       "level": 4,
-      "name": "Sparko-4",
-      "type": "electric"
+      "name": "Rock-4",
+      "type": "earth"
     },
     {
       "level": 5,
-      "name": "Sparko-5",
-      "type": "electric"
+      "name": "Rock-5",
+      "type": "earth"
     },
     {
       "level": 6,
-      "name": "Sparko-6",
-      "type": "electric"
+      "name": "Rock-6",
+      "type": "earth"
     },
     {
       "level": 7,
-      "name": "Sparko-7",
-      "type": "electric"
+      "name": "Rock-7",
+      "type": "earth"
     },
     {
       "level": 8,
-      "name": "Sparko-8",
-      "type": "electric"
+      "name": "Rock-8",
+      "type": "earth"
     },
     {
       "level": 9,
-      "name": "Sparko-9",
-      "type": "electric"
+      "name": "Rock-9",
+      "type": "earth"
     },
     {
       "level": 10,
-      "name": "Sparko-10",
-      "type": "electric"
+      "name": "Rock-10",
+      "type": "earth"
     },
     {
       "level": 11,
-      "name": "Embero-11",
-      "type": "fire"
+      "name": "Volt-11",
+      "type": "electric"
     },
     {
       "level": 12,
-      "name": "Embero-12",
-      "type": "fire"
+      "name": "Volt-12",
+      "type": "electric"
     },
     {
       "level": 13,
-      "name": "Embero-13",
-      "type": "fire"
+      "name": "Volt-13",
+      "type": "electric"
     },
     {
       "level": 14,
-      "name": "Embero-14",
-      "type": "fire"
+      "name": "Volt-14",
+      "type": "electric"
     },
     {
       "level": 15,
-      "name": "Embero-15",
-      "type": "fire"
+      "name": "Volt-15",
+      "type": "electric"
     },
     {
       "level": 16,
-      "name": "Aquado-16",
-      "type": "water"
+      "name": "Volt-16",
+      "type": "electric"
     },
     {
       "level": 17,
-      "name": "Aquado-17",
-      "type": "water"
+      "name": "Volt-17",
+      "type": "electric"
     },
     {
       "level": 18,
-      "name": "Aquado-18",
-      "type": "water"
+      "name": "Volt-18",
+      "type": "electric"
     },
     {
       "level": 19,
-      "name": "Aquado-19",
-      "type": "water"
+      "name": "Volt-19",
+      "type": "electric"
     },
     {
       "level": 20,
-      "name": "Aquado-20",
-      "type": "water"
+      "name": "Volt-20",
+      "type": "electric"
     },
     {
       "level": 21,
       "name": "Legendary-21",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 22,
       "name": "Legendary-22",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 23,
       "name": "Legendary-23",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 24,
       "name": "Legendary-24",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 25,
       "name": "Legendary-25",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 26,
       "name": "Legendary-26",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 27,
       "name": "Legendary-27",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 28,
       "name": "Legendary-28",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 29,
       "name": "Legendary-29",
-      "type": "legend"
+      "type": "legendary"
     },
     {
       "level": 30,
-      "name": "Pikachu-30",
-      "type": "electric-legend"
+      "name": "Legendary-30",
+      "type": "legendary"
     }
   ]
 }
