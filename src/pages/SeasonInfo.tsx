@@ -1,1 +1,0 @@
-export default function SeasonInfo(){ return <div>Season Info</div> }
