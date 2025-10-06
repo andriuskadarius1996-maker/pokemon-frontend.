@@ -1,7 +1,7 @@
 
 import React, { useMemo, useState } from 'react'
 import manifest from './assets/avatars_manifest.json'
-import { Avatar, loadState, saveState, addXP, addPT, grantXPBoost, grantStakeBoost, State, defaultState } from './utils'
+import { Avatar, loadState, saveState, addXP, addPT, grantXPBoost, grantStakeBoost, State } from './utils'
 
 type Tab = 'Main'|'Stake'|'Shop'|'Referral'|'Leaderboard'|'Season Info'|'Daily Check'
 
@@ -13,7 +13,7 @@ const avatarImgs = {
   ...import.meta.glob('./assets/avatars_main/*.{jpg,jpeg,JPG,JPEG}', { eager: true, as: 'url' }),
 } as Record<string, string>;
 
-const typeBadge = (t:string) => ({ earth: '🪨', legendary: '🌟',
+const typeBadge = (t:string) => ({
   electric: '⚡',
   fire: '🔥',
   water: '💧',
@@ -40,14 +40,17 @@ export default function App(){
   const [tab, setTab] = useState<Tab>('Main')
   const { state, commit } = useGame()
 
-  const avatars: Avatar[] = useMemo(()=> manifest.levels.map((v) => {
+  const avatars: Avatar[] = useMemo(()=> {
+    const list: any[] = (manifest as any).levels ?? (manifest as any);
+    return (list as any[]).map((v: any) => {
     const base = `./assets/avatars_main/lv${String(v.level).padStart(2,'0')}`
     const png = `${base}.png`
     const jpg = `${base}.jpg`
     const jpeg = `${base}.jpeg`
     const img = avatarImgs[png] || avatarImgs[jpg] || avatarImgs[jpeg] || Object.values(avatarImgs)[0]
     return { level: v.level, name: v.name, type: v.type, img }
-  }), [])
+  })
+  }, [])
 
   const currentAvatar = avatars[Math.min(state.player.level-1, avatars.length-1)]
 
@@ -78,7 +81,6 @@ export default function App(){
               <div style={{display:'grid', gap:12}}>
                 <button className="btn" onClick={()=>commit(s=>addXP(s, 120))}>Do Quest (+XP)</button>
                 <button className="btn" onClick={()=>commit(s=>addPT(s, 50))}>Claim PT (+50)</button>
-                <button className="btn" onClick={()=>commit(s=>{Object.assign(s, defaultState());})}>Reset Progress (Lv1)</button>
                 <button className="btn" onClick={()=>commit(s=>{grantXPBoost(s)})}>Buy XP Boost x2/9h</button>
                 <button className="btn" onClick={()=>commit(s=>{grantStakeBoost(s)})}>Buy Staking Boost +2%/9h</button>
               </div>
