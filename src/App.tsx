@@ -183,6 +183,8 @@ export default function App(){
           </div>
         )}
 
+        <div className="footer">Demo build. Payments & ndled server-side. UI does not show </div>
+      </div>
         <div className="footer">Demo build. Payments & fees handled server-side. UI does not show fees.</div>
       </div>
     </div>
