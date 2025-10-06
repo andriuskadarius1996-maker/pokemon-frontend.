@@ -1,152 +1,154 @@
-[
-  {
-    "level": 1,
-    "name": "Avatar 1",
-    "file": "lv01.png"
-  },
-  {
-    "level": 2,
-    "name": "Avatar 2",
-    "file": "lv02.png"
-  },
-  {
-    "level": 3,
-    "name": "Avatar 3",
-    "file": "lv03.png"
-  },
-  {
-    "level": 4,
-    "name": "Avatar 4",
-    "file": "lv04.png"
-  },
-  {
-    "level": 5,
-    "name": "Avatar 5",
-    "file": "lv05.png"
-  },
-  {
-    "level": 6,
-    "name": "Avatar 6",
-    "file": "lv06.png"
-  },
-  {
-    "level": 7,
-    "name": "Avatar 7",
-    "file": "lv07.png"
-  },
-  {
-    "level": 8,
-    "name": "Avatar 8",
-    "file": "lv08.png"
-  },
-  {
-    "level": 9,
-    "name": "Avatar 9",
-    "file": "lv09.png"
-  },
-  {
-    "level": 10,
-    "name": "Avatar 10",
-    "file": "lv10.png"
-  },
-  {
-    "level": 11,
-    "name": "Avatar 11",
-    "file": "lv11.png"
-  },
-  {
-    "level": 12,
-    "name": "Avatar 12",
-    "file": "lv12.png"
-  },
-  {
-    "level": 13,
-    "name": "Avatar 13",
-    "file": "lv13.png"
-  },
-  {
-    "level": 14,
-    "name": "Avatar 14",
-    "file": "lv14.png"
-  },
-  {
-    "level": 15,
-    "name": "Avatar 15",
-    "file": "lv15.png"
-  },
-  {
-    "level": 16,
-    "name": "Avatar 16",
-    "file": "lv16.png"
-  },
-  {
-    "level": 17,
-    "name": "Avatar 17",
-    "file": "lv17.png"
-  },
-  {
-    "level": 18,
-    "name": "Avatar 18",
-    "file": "lv18.png"
-  },
-  {
-    "level": 19,
-    "name": "Avatar 19",
-    "file": "lv19.png"
-  },
-  {
-    "level": 20,
-    "name": "Avatar 20",
-    "file": "lv20.png"
-  },
-  {
-    "level": 21,
-    "name": "Avatar 21",
-    "file": "lv21.png"
-  },
-  {
-    "level": 22,
-    "name": "Avatar 22",
-    "file": "lv22.png"
-  },
-  {
-    "level": 23,
-    "name": "Avatar 23",
-    "file": "lv23.png"
-  },
-  {
-    "level": 24,
-    "name": "Avatar 24",
-    "file": "lv24.png"
-  },
-  {
-    "level": 25,
-    "name": "Avatar 25",
-    "file": "lv25.png"
-  },
-  {
-    "level": 26,
-    "name": "Avatar 26",
-    "file": "lv26.png"
-  },
-  {
-    "level": 27,
-    "name": "Avatar 27",
-    "file": "lv27.png"
-  },
-  {
-    "level": 28,
-    "name": "Avatar 28",
-    "file": "lv28.png"
-  },
-  {
-    "level": 29,
-    "name": "Avatar 29",
-    "file": "lv29.png"
-  },
-  {
-    "level": 30,
-    "name": "Avatar 30",
-    "file": "lv30.png"
-  }
-]
+{
+  "levels": [
+    {
+      "level": 1,
+      "name": "Rock-1",
+      "type": "earth"
+    },
+    {
+      "level": 2,
+      "name": "Rock-2",
+      "type": "earth"
+    },
+    {
+      "level": 3,
+      "name": "Rock-3",
+      "type": "earth"
+    },
+    {
+      "level": 4,
+      "name": "Rock-4",
+      "type": "earth"
+    },
+    {
+      "level": 5,
+      "name": "Rock-5",
+      "type": "earth"
+    },
+    {
+      "level": 6,
+      "name": "Rock-6",
+      "type": "earth"
+    },
+    {
+      "level": 7,
+      "name": "Rock-7",
+      "type": "earth"
+    },
+    {
+      "level": 8,
+      "name": "Rock-8",
+      "type": "earth"
+    },
+    {
+      "level": 9,
+      "name": "Rock-9",
+      "type": "earth"
+    },
+    {
+      "level": 10,
+      "name": "Rock-10",
+      "type": "earth"
+    },
+    {
+      "level": 11,
+      "name": "Volt-11",
+      "type": "electric"
+    },
+    {
+      "level": 12,
+      "name": "Volt-12",
+      "type": "electric"
+    },
+    {
+      "level": 13,
+      "name": "Volt-13",
+      "type": "electric"
+    },
+    {
+      "level": 14,
+      "name": "Volt-14",
+      "type": "electric"
+    },
+    {
+      "level": 15,
+      "name": "Volt-15",
+      "type": "electric"
+    },
+    {
+      "level": 16,
+      "name": "Volt-16",
+      "type": "electric"
+    },
+    {
+      "level": 17,
+      "name": "Volt-17",
+      "type": "electric"
+    },
+    {
+      "level": 18,
+      "name": "Volt-18",
+      "type": "electric"
+    },
+    {
+      "level": 19,
+      "name": "Volt-19",
+      "type": "electric"
+    },
+    {
+      "level": 20,
+      "name": "Volt-20",
+      "type": "electric"
+    },
+    {
+      "level": 21,
+      "name": "Legendary-21",
+      "type": "legendary"
+    },
+    {
+      "level": 22,
+      "name": "Legendary-22",
+      "type": "legendary"
+    },
+    {
+      "level": 23,
+      "name": "Legendary-23",
+      "type": "legendary"
+    },
+    {
+      "level": 24,
+      "name": "Legendary-24",
+      "type": "legendary"
+    },
+    {
+      "level": 25,
+      "name": "Legendary-25",
+      "type": "legendary"
+    },
+    {
+      "level": 26,
+      "name": "Legendary-26",
+      "type": "legendary"
+    },
+    {
+      "level": 27,
+      "name": "Legendary-27",
+      "type": "legendary"
+    },
+    {
+      "level": 28,
+      "name": "Legendary-28",
+      "type": "legendary"
+    },
+    {
+      "level": 29,
+      "name": "Legendary-29",
+      "type": "legendary"
+    },
+    {
+      "level": 30,
+      "name": "Legendary-30",
+      "type": "legendary"
+    }
+  ]
+}
