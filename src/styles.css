@@ -29,12 +29,6 @@ button:hover, .btn:hover{filter:brightness(1.05)}
   background: rgba(20,241,149,.08); border:1px solid rgba(20,241,149,.35); color:#a7ffdf;
   border-radius:999px; padding:4px 8px; font-weight:600;
 }
-.tab, .tabs button{
-  background: rgba(255,255,255,.04); border:1px solid var(--ring); color:var(--text); border-radius:12px;
-}
-.tab.active, .tabs button[aria-selected="true"]{
-  background: linear-gradient(135deg, var(--primary), var(--primary-2)); color:#08111f;
-}
-.avatar, img[class*="avatar"], .avatar-box{
-  border-radius:18px; box-shadow: 0 0 0 1px var(--ring) inset, 0 12px 40px rgba(0,0,0,.5);
-}
+.tab, .tabs button{ background: rgba(255,255,255,.04); border:1px solid var(--ring); color:var(--text); border-radius:12px; }
+.tab.active, .tabs button[aria-selected="true"]{ background: linear-gradient(135deg, var(--primary), var(--primary-2)); color:#08111f; }
+.avatar, img[class*="avatar"], .avatar-box{ border-radius:18px; box-shadow: 0 0 0 1px var(--ring) inset, 0 12px 40px rgba(0,0,0,.5); }
