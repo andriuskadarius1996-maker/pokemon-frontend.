@@ -1,3 +1,5 @@
+import TelegramGuard from './guards/TelegramGuard'
+import { CONFIG } from './config'
 
 import React, { useMemo, useState } from 'react'
 import manifest from './assets/avatars_manifest.json'
@@ -55,6 +57,8 @@ export default function App(){
   const currentAvatar = avatars[Math.min(state.player.level-1, avatars.length-1)]
 
   return (
+    (CONFIG.USE_TELEGRAM_GUARD ? <TelegramGuard> : <React.Fragment>) as any
+  )(
     <div className="app">
       <div className="header">
         <div className="brand">POKE TOKEN — Season 1</div>
@@ -190,4 +194,6 @@ export default function App(){
       </div>
     </div>
   )
+)
 }
+

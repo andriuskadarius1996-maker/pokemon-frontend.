@@ -1,36 +1,30 @@
-# POKE TOKEN — Season 1 (Vite + React)
+# POKE TOKEN — Season 1 (Frontend)
 
-Pilnas „viename zip“ demo su Stake / Shop / Referral / Leaderboard / Season Info / Daily Check tabais, avatarų vietiniais asset'ais ir Telegram guard.
+**Status:** MVP-ready, Telegram-guard (Lite), SPA for Vercel.
 
-## Greitas startas
+## What was done
+- Root `index.html` created (Vite standard). `src/index.html` removed.
+- Avatar duplicates removed in `src/assets/avatars_main` (kept PNG where available).
+- Removed `public/avatars_main` to avoid confusion.
+- Added **TelegramGuard (Lite)** — allows running in Telegram or in DEV mode.
+- Filled **AvatarGrid** and **StakeCard** components (replacing placeholders).
+- Added `src/config.ts` with feature flags.
+- Left `vercel.json` rewrite for SPA.
 
+## Local dev
 ```bash
-npm ci
-cp .env.sample .env   # užpildyk reikšmes, jei reikia
-npm run dev           # http://localhost:5173  (jei ne per Telegram, pridėk ?dev=1)
-```
-
-Build ir deploy:
-```bash
+npm i
+npm run dev
+# build
 npm run build
 npm run preview
 ```
 
-### Vercel
-- Įkelk repo į GitHub
-- Vercel → Import Project → pasirink repo → Deploy
-- `vercel.json` jau pridėtas (SPA rewrites).
+## Deploy (Vercel)
+- Import the repo, set framework: **Vite** (React), and build command `npm run build`, output `dist`.
+- Ensure `vercel.json` is present for SPA rewrites.
+- For Telegram-only usage, `CONFIG.USE_TELEGRAM_GUARD = true`.
 
-## Struktūra
-
-- `src/App.tsx` — pagrindinis app su tab'ais ir demo logika.
-- `src/assets/avatars_main/lv01..lv30.png` — placeholder avatarai.
-- `src/assets/stake_monsters/lv01..lv30.png` — placeholder staking kortų iliustracijos (tokie pat paveikslėliai).
-- `src/assets/avatars_manifest.json` — avatarų manifestas (1–30 lygiai).
-- `src/utils.ts` — demo state ir XP/PT/boost funkcijos.
-- `index.html` — Telegram guard (dev režimas per `VITE_DEV_ALLOW_NO_TG=true` arba `?dev=1`).
-- `vercel.json` — SPA rewrites.
-
-## Pastabos
-- UI **nerodo mokesčių**. Apmokėjimai ir validacijos turi vykti serveryje (TON ir pan.).
-- Šis paketas skirtas greitam demonstravimui „iš dėžutės“. Tikro backend'o nėra — integruok `VITE_BACKEND_URL` pagal poreikį.
+## Notes
+- This is client-side MVP; for **full Season 1** connect backend (server-authoritative): balances, orders, referrals, anti-cheat, TON payments.
+- Feature flags in `src/config.ts` control sections visibility.
