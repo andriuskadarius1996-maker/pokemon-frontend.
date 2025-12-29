@@ -1,1 +1,0 @@
-export default function DailyCheck(){ return <div>Daily Check</div> }
